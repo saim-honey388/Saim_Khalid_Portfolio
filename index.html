@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saim Khalid Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!--Navbar starts here-->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-10 text-white">
+        <nav class="flex justify-between items-center my-container h-24">
+            <!-- Logo -->
+             <a href="#about" class="logo text-3xl font-bold">Saim Khalid</a>
+
+            <!--  Desktop Menu -->
+            <ul class="md:flex items-center gap-14 hidden">
+                <li>
+                    <a href="#home" class="uppercase text-[13px] hover:text-yellow-400">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="uppercase text-[13px] hover:text-yellow-400">about</a>
+                </li>
+                <li>
+                    <a href="#whatido" class="uppercase text-[13px] hover:text-yellow-400">What I do</a>
+                </li>
+                <li>
+                    <a href="#works" class="uppercase text-[13px] hover:text-yellow-400">works</a>
+                </li>
+                <li>
+                    <a href="#blog" class="uppercase text-[13px] hover:text-yellow-400">blog</a>
+                </li>
+                <li>
+                    <a href="#contact" class="uppercase text-[13px] hover:text-yellow-400">contact</a>
+                </li>
+
+            </ul>
+            <!-- Hamburger -->
+            <a href="#" id="burger" class="text-2xl md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a> 
+        </nav>
+    </header>
+
+    <!--Mobile Menu-->
+
+    <ul id="menu" class="flex flex-col items-center justify-centergap-8 md:hidden absolute left-0 top-0 bottom-0 bg-white w-60 -translate-x-full transition:transform duration-300">
+        <li>
+            <a href="#home" class="uppercase text-[13px] hover:text-yellow-400">Home</a>
+        </li>
+        <li>
+            <a href="#about" class="uppercase text-[13px] hover:text-yellow-400">about</a>
+        </li>
+        <li>
+            <a href="#whatido" class="uppercase text-[13px] hover:text-yellow-400">What I do</a>
+        </li>
+        <li>
+            <a href="#works" class="uppercase text-[13px] hover:text-yellow-400">works</a>
+        </li>
+        <li>
+            <a href="#blog" class="uppercase text-[13px] hover:text-yellow-400">blog</a>
+        </li>
+        <li>
+            <a href="#contact" class="uppercase text-[13px] hover:text-yellow-400">contact</a>
+        </li>
+
+    </ul>
+
+
+    <!-- Sections Starts Here-->
+    <main>
+        <!-- Hero Section-->
+        <section id="home" class="flex items-center justify-center bg-[url(/assets/black.jpg)] bj-cover h-screen">
+            <div class="my-container">
+                <h1 id="typing" class="text-7xl md:text-8xl text-white font-semibold tracking-tighter h-24 md:h-30"></h1>
+                
+                <!--Social Icons-->
+                <ul class="flex items-center justify-center gap-8">
+                    <li>
+                        <a href="https://github.com/saim-honey388"class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/saim-khalid-46082a250/"class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-linkedin-in"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@saim.khalid983"class="text-white text-xl hover:text-gray-300">
+                            <i class="fa-brands fa-medium"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="my-container sections-pb flex md:flex-row flex-col items-center gap-10">
+                <img src="assets/WhatsApp Image 2025-01-30 at 22.24.45_d584063a.jpg" class="w-full md:w-1/3">
+
+                <div>
+                    <h2 class="text-neutral-800 text-4xl/12 md:text-5xl/16 md:max-w-xl">
+                        I'm M.Saim Khalid, a junior AI Engineer & CV Engineer 
+                    </h2>
+                    <p class="text-gray-500 mt-8 mb-15 text-sm/7 md:text-base/9">
+                        I specialize in AI, NLP, and computer vision, developing real-world applications like sentiment analysis, recommendation systems, spam detection, voice-controlled systems, and object tracking. With expertise in Python, LangChain, Gemini API, and Kivy, I focus on efficient, scalable, and user-friendly AI solutions.
+                    </p>
+                    <a href="https://drive.google.com/uc?export=download&id=12DlvkWPp9bF2w8FBmBjBX_WlAxVMjWsC" target="_blank" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!--EXPERIENCE Section-->
+        <section class="timeline-section">
+            <h2 class="title">Experience</h2>
+            
+            <!-- Tabs for Switching -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="experience">Experience</button>
+                <button class="tab-btn" data-tab="education">Education</button>
+            </div>
+    
+            <!-- Timeline Container -->
+            <div class="timeline-container">
+                <!-- Experience Section -->
+                <div id="experience" class="timeline-content active">
+                    <div class="timeline-item">
+                        <h3>MKS Labs</h3>
+                        <p>CV Engineer | Feb 2023 - Present</p>
+                        <p>Developing and Improving the AI products to optimize user experience.</p>
+                        <p><strong>Skills:</strong> LangChain, Ultralytics, Neo4j</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3>Codex Cue</h3>
+                        <p>NLP Engineer | Jan 2023 - Present</p>
+                        <p>Developed & deployed multiple NLP Solutions for online store listing and order management.</p>
+                        <p><strong>Skills:</strong> Sklearn, TensorFlow, GitLab, Docker</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3>IEMLabs</h3>
+                        <p>Freelance - AI Developer | Feb 2023 - April 2023</p>
+                        <p>Developed solutions for real-world problems</p>
+                    </div>
+                </div>
+    
+                <!-- Education Section -->
+                <div id="education" class="timeline-content">
+                    <div class="timeline-item">
+                        <h3>University Of Management and Technology</h3>
+                        <p>BS(A.I) | 2019 - 2023</p>
+                        <p>Worked on web application development AI solutions.</p>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <h3>Kips College | D-ground |Faisalabad, Pkaistan</h3>
+                        <p>FSC-Preengineering | 2016 - 2018</p>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <h3>K.B.I Public School | Faisalabad</h3>
+                        <p>Matriculation | 2006 - 2016</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Buttons for Expand/Collapse -->
+            <button id="viewAllBtn" class="action-btn">View All</button>
+            <button id="closeBtn" class="action-btn hidden">Okay, I got it</button>
+    
+        </section>
+    
+        <!-- What I do Section-->
+        <section id="whatido" class="bg-gray-100">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">What I Do</h3>
+                
+                <div class="flex md:flex-row flex-col mt-10 gap-14">
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">NLP Specialist</h5>
+                        <p class="text-gray-400 text-sm">
+                            Expert in Natural Language Processing, creating systems that understand, interpret, and generate human language for various applications.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">LLM Developer</h5>
+                        <p class="text-gray-400 text-sm">
+                            Works with Large Language Models to develop advanced AI applications that utilize deep understanding of language and context.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Computer Vision Engineer</h5>
+                        <p class="text-gray-400 text-sm">
+                            Designs AI systems to process and interpret visual data from images or videos, enabling machines to understand and act upon visual input.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">IoT Integration Expert</h5>
+                        <p class="text-gray-400 text-sm">
+                            Integrates Internet of Things (IoT) devices with intelligent systems to enhance automation, data collection, and remote monitoring.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col mt-10 gap-14">
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Data Analyst (Python)</h5>
+                        <p class="text-gray-400 text-sm">
+                            Proficient in analyzing data using Python, applying statistical and machine learning techniques to extract insights and solve complex problems.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Chatbot Designer</h5>
+                        <p class="text-gray-400 text-sm">
+                            Designs and develops intelligent chatbots for various use cases, focusing on creating natural, human-like conversations and user interactions.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Database Engineer</h5>
+                        <p class="text-gray-400 text-sm">
+                            Manages and optimizes databases, ensuring efficient storage, retrieval, and processing of data for large-scale systems..
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5>AI Solution Architect</h5>
+                        <p class="text-gray-400 text-sm">
+                            Designs and implements AI-driven solutions tailored to specific business needs, ensuring scalability, performance, and integration with existing systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- works SECTION-->
+        <section id="works">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Recent Works</h3>
+        
+                <div class="flex md:flex-row flex-col gap-14 mt-14">
+                    <div class="project-card">
+                        <a href="https://github.com/saim-honey388/Keyword-and-Topic-Extraction-using-NLP" class="project-image">
+                            <img src="assets/downloadkeyword extraction.png" alt="Project Image">
+                        </a>
+                        <div class="project-details">
+                            <a href="https://github.com/saim-honey388/Keyword-and-Topic-Extraction-using-NLP">
+                                <h4>Keyword Extraction</h4>
+                            </a>
+                            <p>This project is an NLP-based tool designed to extract key phrases and topics from text data. It supports multiple input formats, including URLs, PDF files, and Word documents. The tool preprocesses the input text, removes stop words, and extracts keywords using TF-IDF, while identifying relevant topics using Latent Dirichlet Allocation (LDA).</p>
+                            <div class="project-icons">
+                                <a href="https://html.com" class="icon-link"><img src="assets/html-icon.png" alt="HTML Icon" class="tech-icon"></a>
+                                <a href="https://css-tricks.com" class="icon-link"><img src="assets/css-icon.png" alt="CSS Icon" class="tech-icon"></a>
+                                <a href="https://javascript.info" class="icon-link"><img src="assets/js-icon.png" alt="JavaScript Icon" class="tech-icon"></a>
+                            </div>
+                            <a href="https://github.com/saim-honey388/Keyword-and-Topic-Extraction-using-NLP" class="visit-project">Visit Project</a>
+                        </div>
+                    </div>
+        
+                    <div class="project-card">
+                        <a href="https://github.com/saim-honey388/Spam-Classification-NLP" class="project-image">
+                            <img src="assets/spam-classification.jpeg" alt="Project Image">
+                        </a>
+                        <div class="project-details">
+                            <a href="https://github.com/saim-honey388/Spam-Classification-NLP">
+                                <h4>Spam Classification NLP</h4>
+                            </a>
+                            <p>This project focuses on building a spam classification model that distinguishes between spam and ham (legitimate) messages in SMS or email texts. The model leverages Natural Language Processing (NLP) techniques and machine learning algorithms for text preprocessing, feature extraction, and classification.</p>
+                            <div class="project-icons">
+                                <a href="https://python.org" class="icon-link"><img src="assets/python-icon.png" alt="Python Icon" class="tech-icon"></a>
+                                <a href="https://langchain.com" class="icon-link"><img src="assets/langchain-icon.png" alt="Langchain Icon" class="tech-icon"></a>
+                                <a href="https://www.espressif.com/en/products/socs/esp32" class="icon-link"><img src="assets/sklearn-icon.jpeg" alt="GitHub Icon" class="tech-icon"></a>
+                            </div>
+                            <a href="https://github.com/saim-honey388/Spam-Classification-NLP" class="visit-project">Visit Project</a>
+                        </div>
+                    </div>
+        
+                    <div class="project-card">
+                        <a href="https://github.com/saim-honey388/Sentiment-Analysis-ML-NLP" class="project-image">
+                            <img src="assets/sentiment-analysis.jpeg" alt="Project Image">
+                        </a>
+                        <div class="project-details">
+                            <a href="https://github.com/saim-honey388/Sentiment-Analysis-ML-NLP">
+                                <h4>Sentiment Analysis NLP</h4>
+                            </a>
+                            <p>Sentiment analysis using Logistic Regression, Random Forest, and ensemble learning with text preprocessing techniques using NLP and TF-IDF Vectorizer.</p>
+                            <div class="project-icons">
+                                <a href="https://html.com" class="icon-link"><img src="assets/html-icon.png" alt="HTML Icon" class="tech-icon"></a>
+                                <a href="https://javascript.info" class="icon-link"><img src="assets/js-icon.png" alt="JavaScript Icon" class="tech-icon"></a>
+                                <a href="https://javascript.info" class="icon-link"><img src="assets/js-icon.png" alt="JavaScript Icon" class="tech-icon"></a>
+                            </div>
+                            <a href="https://github.com/saim-honey388/Sentiment-Analysis-ML-NLP" class="visit-project">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Blogs Section -->
+        <section id="blog" class="bg-gray-100">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Latest Blogs</h3>
+
+                <div class="flex md:flex-row flex-col gap-14 mt-10">
+                    <div>
+                        <img src="assets/3.2.jpg">
+                        <h4 class="text-x1 text-neutral-800 font-semibold mt-8 uppercase">Supervised Learning: Teaching Machines with Data</h4>
+                        <p classes="text-gray-400 text-sm/7 mt-3">In the vast realm of machine learning, supervised learning stands out as a cornerstone technique. It's the process of teaching a machine using labeled data, much like a teacher guiding a student with examples and answers. Let's dive into the world of supervised learning and explore'how it’s shaping the future of AI.
+                        </p>
+                        <div class="mt-10 flex justify-between items-center">
+                            <a href="https://medium.com/@saim.khalid983/supervised-learning-teaching-machines-with-data-f47ff2281cca" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read More</a>
+                            <span class="text-sm text-gray-400">January 17, 2024</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/1.2.jpeg">
+                        <h4 class="text-x1 text-neutral-800 font-semibold mt-8 uppercase">Convolutional Neural Networks: The AI Behind Computer Vision</h4>
+                        <p classes="text-gray-400 text-sm/7 mt-3">
+                            In the vast landscape of Artificial Neural Networks (ANNs), Convolutional Neural Networks (CNNs) stand out as the powerhouse behind modern computer vision. Let's dive into the world of CNNs and discover how they're revolutionizing image recognition and processing.
+                        </p>
+                        <div class="mt-10 flex justify-between items-center">
+                            <a href="https://medium.com/@saim.khalid983/convolutional-neural-networks-the-ai-behind-computer-vision-1230274408bb" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read More</a>
+                            <span class="text-sm text-gray-400">January 17, 2024</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/3.1.jpg">
+                        <h4 class="text-x1 text-neutral-800 font-semibold mt-8 uppercase">Artificial Neural Networks: The Digital Brain Revolutionizing AI
+                        </h4>
+                        <p classes="text-gray-400 text-sm/7 mt-3">
+                            Dive into the fascinating world of Artificial Neural Networks (ANNs) and discover how these digital brains are reshaping the landscape of artificial intelligence.
+                        </p>
+                        <div class="mt-10 flex justify-between items-center">
+                            <a href="https://medium.com/@saim.khalid983/artificial-neural-networks-the-digital-brain-revolutionizing-ai-8aa66d70c0b6" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read More</a>
+                            <span class="text-sm text-gray-400">January 17, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Contact Us</h3>
+
+                <form action="https://formsubmit.co/saim.khalid983@gmail.com" method="POST">
+                    <div class="flex md:flex-row flex-col mt-10 gap-10">
+                        <input type="text" name="name" placeholder="Name" autocomplete="off" class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                        <input type="text" name="number" placeholder="Number" class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                    </div>
+                    <div class="flex md:flex-row flex-col mt-10 gap-10">
+                        <input type="email" name="email" placeholder="Email" autocomplete="off" class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                        <input type="text" name="subject" placeholder="Subject" class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm">
+                    </div>
+                    <div class="mt-10">
+                        <textarea name="message" placeholder="Message" class="field resize-none w-full h-32 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm"></textarea>
+                    </div>
+                    <div class="mt-10">
+                        <button type="submit" class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER Starts Here-->
+    <footer class="bg-gray-100 flex flex-col items-center justify-center py-15 text-center">
+        <div>
+            <!--Social Icons-->
+            <ul class="flex gap-5">
+                <li class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration-300">
+                    <a href="https://github.com/saim-honey388" class="text-neutral-800">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration-300">
+                    <a href="https://www.linkedin.com/in/saim-khalid-46082a250/" class="text-neutral-800">
+                        <i class="fa-brands fa-linkedin-in"></i> 
+                    </a>
+                </li>
+                <li class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration-300">
+                    <a href="https://medium.com/@saim.khalid983" class="text-neutral-800">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
